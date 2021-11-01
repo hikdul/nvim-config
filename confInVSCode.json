@@ -1,0 +1,248 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Darcula",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "vim.argumentObjectClosingDelimiters": [
+    ")",
+    "]",
+    "}"
+  ],
+  "vim.argumentObjectOpeningDelimiters": [
+    "(",
+    "[",
+    "{"
+  ],
+  "vim.camelCaseMotion.enable": true,
+  "vim.changeWordIncludesWhitespace": true,
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "after": [
+        ":",
+        "w",
+        "<CR>"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "after": [
+        ":",
+        "q",
+        "<CR>"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "Q"
+      ],
+      "after": [
+        ":",
+        "w",
+        "q",
+        "!",
+        "<CR>"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "n",
+        "t"
+      ],
+      "commands": [
+        "revealInExplorer"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "t"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "l"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "e"
+      ],
+      "commands": [
+        "workbench.action.splitEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.navigateRight"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "1",
+        "0",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "e"
+      ],
+      "commands": [
+        "workbench.action.splitEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.navigateRight"
+      ]
+    }
+  ],
+  "bookmarks.saveBookmarksInProject": true,
+  "workbench.editor.enablePreview": false
+}
