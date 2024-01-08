@@ -6,13 +6,11 @@
 "source ~/.vimrc
 "Ahora si a configurar
 
-
-"*****************************************************************************
-"Intalamos Plugins con  el manejador de plug-ig, e indicamos donde guardamos nuestros plugin
-"*****************************************************************************
+" *****************************************************************************
+" Intalamos Plugins con  el manejador de plug-ig, e indicamos donde guardamos nuestros plugin
+" *****************************************************************************
 
 call plug#begin('~/.local/share/nvim/plugged')
-
 
 "install my theme
 Plug 'morhetz/gruvbox', {'as' : 'gruvbox'} 
@@ -36,26 +34,8 @@ Plug 'vim-airline/vim-airline-themes'
 "mostrar errores
 Plug 'dense-analysis/ale'
 
-"para autoidentar, muestra inicios y fines de linea con unas rallitas
-Plug 'Yggdroot/indentLine'
-
-" required by fugitive to :Gbrowse
-Plug 'tpope/vim-rhubarb' 
-
-"por que uso varias partes del empaquetado
-Plug 'editor-bootstrap/vim-bootstrap-updater'
-
-"multicursor
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-
 "para autocerrar etiquetas
 Plug 'alvan/vim-closetag'
-
-"para autocompletar bootstrap
-Plug 'jvanja/vim-bootstrap4-snippets'
-
-"plug para tener un portapales de mis copias, o que me permite copiar mejor
-Plug 'gsiano/vmux-clipboard'
 
 "para ver iconos en mis navegaciones
 Plug 'ryanoasis/vim-devicons'
@@ -508,36 +488,6 @@ let g:airline#extensions#virtualenv#enabled = 1
   let g:indentLine_char = '|' "'┆'
   let g:indentLine_faster = 1
 
-
-"*****************************************************************************
-"" Autocmd Rules
-"*****************************************************************************
-"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
-augroup vimrc-sync-fromstart
-  autocmd!
-  autocmd BufEnter * :syntax sync maxlines=200
-augroup END
-
-"" Remember cursor position
-augroup vimrc-remember-cursor-position
-  autocmd!
-  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-augroup END
-
-"" txt
-augroup vimrc-wrapping
-  autocmd!
-  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
-augroup END
-
-"" make/cmake
-augroup vimrc-make-cmake
-  autocmd!
-  autocmd FileType make setlocal noexpandtab
-  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
-augroup END
-
-set autoread
 
 "*****************************************************************************
 "" Custom configs for lenguages
